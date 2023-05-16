@@ -17,16 +17,18 @@ const colors = ["tangerine", "magenta", "lilac", "daffodil"]
 const cohort = "LEARN 2023"
 // console.log(cohort.length)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: 10
+
+// b) Verify and explain: log will output the length of the string 
 
 // --------------------2) What will this log?
 
 const greeting = "Hello World!"
 // console.log(greeting[4])
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer:o
+
+// b) Verify and explain: the log is searching through the index for the 4th one
 
 // --------------------3) What will this log?
 
