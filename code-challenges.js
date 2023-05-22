@@ -1,7 +1,7 @@
 // ASSESSMENT 1: Coding Practical Questions
 // To run file: navigate to the correct directory in terminal, $ node code-challenges.js
 // Pseudo coding your process is required.
-// --------------------INSTRUCTOR EXAMPLE: Create a function that takes in two strings and determines which of the two strings has more characters. Use the two sets of test variables provided.
+// --------------------INSTRUCTOR EXAMPLE: (Create a function) that takes in two strings and determines which of the two strings has more characters. Use the two sets of test variables provided.
 
 // Pseudo code:
   //Declare a function that takes two parameters, which will both be strings.
@@ -28,11 +28,24 @@ const fruit4 = "kiwi"
 
 // Evaluate the number with conditionals to determine if it is above, at, or below boiling point.
 
-// Use the provided boiling point temperature of 212 degrees Fahrenheit as the threshold for comparison.
+// Use the provided boiling point temperature of 212 degrees as the threshold for comparison.
 
 // Return a string with the temperature and its relation to boiling point.
 
-const temperature1 = 42
+const temperatureCheck = (temp) => {
+  if(temp<212) {
+    return "{temp} is above the boiling point"
+   } else if(temp === 212) {
+        return "{temp} is at the boiling point"
+        }else if(temp>212) {
+            return "{temp} is below boiling point"
+          }
+        }
+      console.log(temp(42))
+    
+   
+
+      const temperature1 = 42
 // Expected output: "42 is below boiling point"
 
 const temperature2 = 350
