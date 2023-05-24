@@ -60,14 +60,19 @@ const temperature3 = 212
 
   // Create a function that takes two arrays as parameters
 
-  // Combine the arrays using the spread operator or concat() method
+  // Combine the arrays using the concat() method
 
-  // Get the length of the combined array using the length property
+  // Get the length of the combined array using the length
 
   //  Return the length of the combined array.
 
+
 const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
 const padres1998WorldSeriesRuns = [6, 3, 5, 3]
+const baseball =  padres1984WorldSeriesRuns.concat(padres1988WorldSeriesRuns).length;
+console.log
+
+
 // Expected output: 9
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
@@ -87,33 +92,66 @@ const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 const currentCohort = "Delta 2023"
 // Expected output: "3202 atleD"
 
+const reverseString = (str) => {
+  let reversedString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedString += str[i];
+  }
+  return reversedString;
+};
+
+const currentCohort = "Delta 2023";
+const reversed = reverseString(currentCohort);
+console.log(reversed);
+
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
 // Pseudo code:
 
-const numberOfConnections = [13, 34, 42, 5, 5, 10, 27, 42, 10]
+// Define the array as array and the given value as value
 
-const givenValue1 = 42
-// Expected output: 7
+//Find the last index of the given value in the array 
 
-const givenValue2 = 10
-// Expected output: 8
+//Output the lastIndex as the final result
+
+const numberOfConnections = [13, 34, 42, 5, 5, 10, 27, 42, 10];
+
+const givenValue1 = 42;
+console.log(numberOfConnections.lastIndexOf(givenValue1)); // Output: 7
+
+const givenValue2 = 10;
+console.log(numberOfConnections.lastIndexOf(givenValue2)); // Output: 8
+
 
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
-// Pseudo code:
+//Pseudo code:
 
-  //Define a function that takes two parameters - an array and a value.
-  
-  //Use the .lastIndexOf() method to find the last index of the given value in the array.
-  
-  //Return the last index of the given value.
-  
-  //Test the function using the given test variables.
+//Define the arrays sanDiegoSummerTemperatures and sanDiegoWinterTemperatures
 
-const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
-// Expected output: [82, 80, 79, 77, 76, 73, 72]
+//Sort each array in descending order, arranging the numbers from largest to smallest
 
-const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
-// Expected output: [68, 67, 66, 66, 62, 59, 59]
+//Output the sorted arrays
+
+
+
+const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76];
+sanDiegoSummerTemperatures.sort((a, b) => b - a);
+console.log(sanDiegoSummerTemperatures); // Output: [82, 80, 79, 77, 76, 73, 72]
+
+const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66];
+sanDiegoWinterTemperatures.sort((a, b) => b - a);
+console.log(sanDiegoWinterTemperatures); // Output: [68, 67, 66, 66, 62, 59, 59]
+
+
+
+
+
+
+
+
+
+
+
+  
